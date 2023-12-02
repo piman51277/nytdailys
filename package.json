@@ -1,7 +1,7 @@
 {
   "name": "nytdailys",
   "version": "1.0.0",
-  "description": "Discord bot that logs NYT Dayly puzzles",
+  "description": "Discord bot that logs NYT Daily puzzles",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
