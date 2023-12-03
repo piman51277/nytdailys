@@ -1,12 +1,9 @@
 import { REST, Routes } from "discord.js";
 import { config } from "../env/env";
-
-import pingCommand from "./entries/ping";
 import { Command, CommandEntry } from "./types";
-
 import { client } from "../bot";
 
-const commandEntries: CommandEntry[] = [pingCommand];
+const commandEntries: CommandEntry[] = [];
 
 //strip the handler from the command entry
 const commands: Command[] = commandEntries.map((entry) => {
