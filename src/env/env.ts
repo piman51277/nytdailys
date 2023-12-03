@@ -26,6 +26,7 @@ const configuration = parse(rawConfig);
 // validates the extracted env variables
 const configSchema = Joi.object({
   DISCORD_TOKEN: Joi.string().required(),
+  CLIENT_ID: Joi.string().required(),
 }).unknown();
 const { error, value: validatedConfig } = configSchema.validate(configuration);
 if (error) {
@@ -35,5 +36,6 @@ if (error) {
 // export
 interface ENV {
   DISCORD_TOKEN: string;
+  CLIENT_ID: string;
 }
 export const config: ENV = validatedConfig as ENV;
